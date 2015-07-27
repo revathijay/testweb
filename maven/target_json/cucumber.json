@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5644057180,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "find a dealer link",
+        "description": "",
+        "id": "test-find-a-dealer-link;find-a-dealer-link",
+        "after": [
+          {
+            "result": {
+              "duration": 266798181,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2136382010,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the mobile home page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_mobile_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 120232620,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see \"FIND A DEALER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FIND A DEALER",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test find a dealer link",
+    "description": "",
+    "id": "test-find-a-dealer-link",
+    "keyword": "Feature",
+    "uri": "src/test/java/com/sample/HomePageMobile.feature"
+  }
+]

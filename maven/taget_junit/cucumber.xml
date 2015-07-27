@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.16747">
+<testcase classname="Test find a dealer link" name="find a dealer link" time="8.16747">
+<system-out><![CDATA[Given I am in the mobile home page..........................................passed
+Then I should see "FIND A DEALER"...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
