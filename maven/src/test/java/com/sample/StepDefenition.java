@@ -131,11 +131,16 @@ public class StepDefenition {
     	 BuildAndPrice.clickOnReview(driver);
      }
      
+     @Then("^I wait for \"([^\"]*)\" class$")
+     public void i_wait_for_seconds(String className) throws Throwable {
+        CommonSteps.waitforSeconds(driver,className);
+     }
+     
     
 	@After public void close()
 	{
 		driver.manage().deleteAllCookies();
-		driver.quit();
+		driver.close();
 	}
 	
 }

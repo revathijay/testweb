@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.16747">
-<testcase classname="Test find a dealer link" name="find a dealer link" time="8.16747">
-<system-out><![CDATA[Given I am in the mobile home page..........................................passed
-Then I should see "FIND A DEALER"...........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="35.167817">
+<testcase classname="Request for brochure" name="request for brochure" time="35.167817">
+<system-out><![CDATA[Given I am in the home page.................................................passed
+Then I should see "Brochure Request"........................................passed
+And I follow link "Brochure Request"........................................passed
+Then I should see "CONTACT US"..............................................passed
+And I select the first model................................................passed
+And I fill in my details as follows.........................................passed
+And I click on request my brochure..........................................passed
+Then I should see "THANK YOU REVATHI".......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

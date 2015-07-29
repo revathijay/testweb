@@ -34,7 +34,7 @@ public class RequestBrochure {
 	public static void clickOnBrochure(WebDriver driver) 
 	{
 		driver.findElement(By.xpath("//*[@id='brochureForm']/div[2]/div[9]/input")).click();	
-		WebDriverWait wait = new WebDriverWait(driver,5);
+		WebDriverWait wait = new WebDriverWait(driver,0);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("test-drive")));
 	}
 

@@ -23,7 +23,7 @@ public class BuildAndPrice {
 
 	public static void changeGradeFSport(WebDriver driver)
 	{
-		WebDriverWait wait = new WebDriverWait(driver,30);
+		WebDriverWait wait = new WebDriverWait(driver,50);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("chevronItem")));
 		driver.findElement(By.xpath("//*[@id='navGrade']/a/div/div/div[1]")).click();
 		driver.findElement(By.xpath("//*[@id='build-and-price']/div[1]/div[1]/div[3]/div/div/div[2]/div[3]/ul/li[2]/a/div/div[1]/div/div[3]")).click();
@@ -31,7 +31,7 @@ public class BuildAndPrice {
 
 	public static void changeColour(WebDriver driver, String colour) {
 		driver.findElement(By.xpath("//*[@id='navColours']/a/div/div/div[1]/div[1]/div")).click();
-		WebDriverWait wait = new WebDriverWait(driver,30);
+		WebDriverWait wait = new WebDriverWait(driver,50);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("ColourListSection")));
 		driver.findElement(By.xpath("//*[@id='build-and-price']/div[1]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div[2]/ul/li[4]/a")).click();
 		

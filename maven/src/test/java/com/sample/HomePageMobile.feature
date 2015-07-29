@@ -1,5 +1,5 @@
-Feature: Test find a dealer link
+Feature: Home Page Mobile
 
-Scenario: find a dealer link
+Scenario: verify home page for mobile
 Given I am in the mobile home page
 Then I should see "FIND A DEALER"
