@@ -6,7 +6,787 @@
         "before": [
           {
             "result": {
-              "duration": 6833665679,
+              "duration": 4114658741,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Build and Price a model",
+        "description": "",
+        "id": "build-and-price-a-model;build-and-price-a-model",
+        "after": [
+          {
+            "result": {
+              "duration": 13634298,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4298540338,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the home page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5563541899,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see \"COMPARE MODELS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "COMPARE MODELS",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1525760213,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I follow link \"COMPARE MODELS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "COMPARE MODELS",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1170903538,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter postcode as \"2134\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2134",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefenition.i_enter_postcode_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171943134,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill in my details as follows",
+            "match": {
+              "location": "StepDefenition.i_fill_in_my_details_as_follows(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "Revathi"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "email",
+                  "test@lexus.com"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 796473822,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I follow link \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OK",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 549123979,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select \"ct200h/luxury\",\"ct200h/f-sport\" of \"ct200h\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ct200h/luxury",
+                  "offset": 10
+                },
+                {
+                  "val": "ct200h/f-sport",
+                  "offset": 26
+                },
+                {
+                  "val": "ct200h",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefenition.i_select_of(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 695534502,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I follow link \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OK",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 707712338,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I follow link \"COMPARE VEHICLES\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "COMPARE VEHICLES",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6019138064,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see \"LUXURY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LUXURY",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3664170909,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see \"ADD/CHANGE MODELS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADD/CHANGE MODELS",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2736073052,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I follow link \"BUILD \u0026 PRICE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BUILD \u0026 PRICE",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5241259567,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I change grade to F Sport",
+            "match": {
+              "location": "StepDefenition.i_change_grade_to_F_Sport()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2185943887,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I change colour to \"Vermillion\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vermillion",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefenition.i_change_colour_to(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2302999980,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on review",
+            "match": {
+              "location": "StepDefenition.i_click_on_review()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5090391515,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should see \"READY TO PROCEED?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "READY TO PROCEED?",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Build and Price a model",
+    "description": "",
+    "id": "build-and-price-a-model",
+    "keyword": "Feature",
+    "uri": "BuildPrice.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2044160236,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Compare Models",
+        "description": "",
+        "id": "compare-models;compare-models",
+        "after": [
+          {
+            "result": {
+              "duration": 10909732,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3372615855,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the home page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5851525678,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see \"COMPARE MODELS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "COMPARE MODELS",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2912560650,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I follow link \"COMPARE MODELS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "COMPARE MODELS",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 884215633,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter postcode as \"2134\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2134",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefenition.i_enter_postcode_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101398144,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill in my details as follows",
+            "match": {
+              "location": "StepDefenition.i_fill_in_my_details_as_follows(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "Revathi"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "email",
+                  "test@lexus.com"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 831423481,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I follow link \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OK",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 517583498,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select \"ct200h/luxury\",\"ct200h/f-sport\" of \"ct200h\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ct200h/luxury",
+                  "offset": 10
+                },
+                {
+                  "val": "ct200h/f-sport",
+                  "offset": 26
+                },
+                {
+                  "val": "ct200h",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefenition.i_select_of(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 708305487,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I follow link \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OK",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 678981847,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I follow link \"COMPARE VEHICLES\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "COMPARE VEHICLES",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3317022164,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I wait for \"driveawayprice\" class",
+            "match": {
+              "arguments": [
+                {
+                  "val": "driveawayprice",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefenition.i_wait_for_seconds(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4081037556,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see \"LUXURY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LUXURY",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3799217103,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see \"$42,787\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$42,787",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3765527396,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see \"F SPORT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "F SPORT",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3639381470,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should see \"$52,147\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$52,147",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Compare Models",
+    "description": "",
+    "id": "compare-models",
+    "keyword": "Feature",
+    "uri": "CompareModels.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2027935700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "verify home page desktop",
+        "description": "",
+        "id": "home-page-desktop;verify-home-page-desktop",
+        "after": [
+          {
+            "result": {
+              "duration": 15284250,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5266831118,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the home page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5542774106,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see \"FIND A DEALER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FIND A DEALER",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Desktop",
+    "description": "",
+    "id": "home-page-desktop",
+    "keyword": "Feature",
+    "uri": "HomePageDesktop.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2073386375,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "verify home page for mobile",
+        "description": "",
+        "id": "home-page-mobile;verify-home-page-for-mobile",
+        "after": [
+          {
+            "result": {
+              "duration": 10845135,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2047349058,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the mobile home page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_mobile_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203463090,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see \"FIND A DEALER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FIND A DEALER",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Mobile",
+    "description": "",
+    "id": "home-page-mobile",
+    "keyword": "Feature",
+    "uri": "HomePageMobile.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2050999722,
               "status": "passed"
             },
             "match": {
@@ -21,7 +801,7 @@
         "after": [
           {
             "result": {
-              "duration": 12486032,
+              "duration": 10536334,
               "status": "passed"
             },
             "match": {
@@ -34,7 +814,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4835680577,
+              "duration": 5068227934,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +826,7 @@
           },
           {
             "result": {
-              "duration": 5353643811,
+              "duration": 5577139067,
               "status": "passed"
             },
             "line": 5,
@@ -64,7 +844,7 @@
           },
           {
             "result": {
-              "duration": 1899497467,
+              "duration": 2135908600,
               "status": "passed"
             },
             "line": 6,
@@ -82,7 +862,7 @@
           },
           {
             "result": {
-              "duration": 2978629700,
+              "duration": 3108937939,
               "status": "passed"
             },
             "line": 7,
@@ -100,7 +880,7 @@
           },
           {
             "result": {
-              "duration": 70298676,
+              "duration": 68632422,
               "status": "passed"
             },
             "line": 8,
@@ -112,7 +892,7 @@
           },
           {
             "result": {
-              "duration": 113880855,
+              "duration": 98346667,
               "status": "passed"
             },
             "line": 9,
@@ -140,7 +920,7 @@
           },
           {
             "result": {
-              "duration": 11055450912,
+              "duration": 7516448816,
               "status": "passed"
             },
             "line": 12,
@@ -152,7 +932,7 @@
           },
           {
             "result": {
-              "duration": 2014583337,
+              "duration": 1987031601,
               "status": "passed"
             },
             "line": 13,
@@ -175,6 +955,433 @@
     "description": "",
     "id": "request-for-brochure",
     "keyword": "Feature",
-    "uri": "src/test/java/com/sample/RequestBrochure.feature"
+    "uri": "RequestBrochure.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2044658602,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "request for test drive",
+        "description": "",
+        "id": "request-for-test-drive;request-for-test-drive",
+        "after": [
+          {
+            "result": {
+              "duration": 9893076,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3384928921,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the home page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5469821198,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see \"Request a Test Drive\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Request a Test Drive",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3636085186,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I follow link \"Request a Test Drive\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Request a Test Drive",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5168606402,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see \"CONTACT US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CONTACT US",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 72449410,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select first model",
+            "match": {
+              "location": "StepDefenition.i_select_first_model()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 301089524,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select your details",
+            "match": {
+              "location": "StepDefenition.i_select_your_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700707734,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill in my details as follows",
+            "match": {
+              "location": "StepDefenition.i_fill_in_my_details_as_follows(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "Revathi"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "surname",
+                  "test"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "email",
+                  "test@lexus.com"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "phone",
+                  "0456789765"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1024401552,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I fill in my preferred postcode as \"2134\" and select \"Sydney City Lexus\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2134",
+                  "offset": 36
+                },
+                {
+                  "val": "Sydney City Lexus",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDefenition.i_fill_in_my_preferred_postcode_as_and_select(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11795301106,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on request my test drive",
+            "match": {
+              "location": "StepDefenition.i_click_on_request_my_test_drive()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3765389750,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see \"THANK YOU REVATHI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "THANK YOU REVATHI",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Request for test drive",
+    "description": "",
+    "id": "request-for-test-drive",
+    "keyword": "Feature",
+    "uri": "RequestaTestDrive.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2064931952,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "find chatswood dealer",
+        "description": "",
+        "id": "find-a-dealer;find-chatswood-dealer",
+        "after": [
+          {
+            "result": {
+              "duration": 10549918,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6288580854,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the home page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5858138771,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see \"FIND A DEALER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FIND A DEALER",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2194743937,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I follow link \"FIND A DEALER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FIND A DEALER",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2854570816,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see \"CONTACT US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CONTACT US",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45274693,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill in my details as follows",
+            "match": {
+              "location": "StepDefenition.i_fill_in_my_details_as_follows(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "postcode",
+                  "2067"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 469181562,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select \"CHATSWOOD NSW 2067\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHATSWOOD NSW 2067",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefenition.i_select(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6511698787,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see \"Contact Lexus of Chatswood\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Contact Lexus of Chatswood",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2650704445,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I follow link \"VISIT DEALER WEBSITE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "VISIT DEALER WEBSITE",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2260974480,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see \"LEXUS OF CHATSWOOD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LEXUS OF CHATSWOOD",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Find a dealer",
+    "description": "",
+    "id": "find-a-dealer",
+    "keyword": "Feature",
+    "uri": "selectDealerPostcode.feature"
   }
 ]

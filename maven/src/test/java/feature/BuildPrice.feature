@@ -12,7 +12,7 @@ And I follow link "OK"
 Then I select "ct200h/luxury","ct200h/f-sport" of "ct200h"
 And I follow link "OK"
 And I follow link "COMPARE VEHICLES"
-Then I should see "CT 200hLuxury"
+Then I should see "LUXURY"
 Then I should see "ADD/CHANGE MODELS"
 And I follow link "BUILD & PRICE"
 And I change grade to F Sport

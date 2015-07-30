@@ -28,8 +28,8 @@ public class CommonSteps {
 	
 	public static void i_should_see(String text,WebDriver driver) throws Exception 
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.textToBePresentInElement(By.cssSelector("body"), text));
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.textToBePresentInElement(By.tagName("body"), text));
 	    //System.out.println(driver.findElement(By.tagName("body")).getText());
 		String bodyText =driver.findElement(By.tagName("body")).getText();
 		if(!(bodyText.contains(text)))

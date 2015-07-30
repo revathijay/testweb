@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="com.sample.RunTest" time="0.024" errors="0" skipped="0">
+<testsuite tests="68" failures="0" name="com.sample.RunTest" time="0.131" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\rcheruvillilkonat\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf23537734582396023.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\rcheruvillilkonat\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3587624643617812571.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_51\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files (x86)/Java/jre7/bin/client;C:/Program Files (x86)/Java/jre7/bin;C:/Program Files (x86)/Java/jre7/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Business Objects\Common\3.5\bin\NOTES\;C:\Program Files (x86)\Business Objects\Common\3.5\bin\NOTES\DATA\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Enterprise Vault\EVClient\x64\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\nodejs\;C:\Program Files\Microsoft\Web Platform Installer\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Business Objects\Common\3.5\bin\NOTES\;C:\Program Files (x86)\Business Objects\Common\3.5\bin\NOTES\DATA\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Enterprise Vault\EVClient\x64\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\nodejs\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Users\rcheruvillilkonat\Downloads\eclipse-java-mars-R-win32\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,7 +61,45 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: request for brochure" name="Given I am in the home page" time="0.004"/>
+  <testcase classname="Scenario: Build and Price a model" name="Given I am in the home page" time="0.003"/>
+  <testcase classname="Scenario: Build and Price a model" name="Then I should see &quot;COMPARE MODELS&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I follow link &quot;COMPARE MODELS&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I enter postcode as &quot;2134&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I fill in my details as follows" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I follow link &quot;OK&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="Then I select &quot;ct200h/luxury&quot;,&quot;ct200h/f-sport&quot; of &quot;ct200h&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I follow link &quot;OK&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I follow link &quot;COMPARE VEHICLES&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="Then I should see &quot;LUXURY&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="Then I should see &quot;ADD/CHANGE MODELS&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I follow link &quot;BUILD &amp; PRICE&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I change grade to F Sport" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I change colour to &quot;Vermillion&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="And I click on review" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="Then I should see &quot;READY TO PROCEED?&quot;" time="0"/>
+  <testcase classname="Scenario: Build and Price a model" name="Scenario: Build and Price a model" time="0.02"/>
+  <testcase classname="Scenario: Compare Models" name="Given I am in the home page" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="Then I should see &quot;COMPARE MODELS&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="And I follow link &quot;COMPARE MODELS&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="And I enter postcode as &quot;2134&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="And I fill in my details as follows" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="And I follow link &quot;OK&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="Then I select &quot;ct200h/luxury&quot;,&quot;ct200h/f-sport&quot; of &quot;ct200h&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="And I follow link &quot;OK&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="And I follow link &quot;COMPARE VEHICLES&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="And I wait for &quot;driveawayprice&quot; class" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="Then I should see &quot;LUXURY&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="Then I should see &quot;$42,787&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="Then I should see &quot;F SPORT&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="Then I should see &quot;$52,147&quot;" time="0"/>
+  <testcase classname="Scenario: Compare Models" name="Scenario: Compare Models" time="0.017"/>
+  <testcase classname="Scenario: verify home page desktop" name="Given I am in the home page" time="0"/>
+  <testcase classname="Scenario: verify home page desktop" name="Then I should see &quot;FIND A DEALER&quot;" time="0"/>
+  <testcase classname="Scenario: verify home page desktop" name="Scenario: verify home page desktop" time="0.025"/>
+  <testcase classname="Scenario: verify home page for mobile" name="Given I am in the mobile home page" time="0"/>
+  <testcase classname="Scenario: verify home page for mobile" name="Then I should see &quot;FIND A DEALER&quot;" time="0"/>
+  <testcase classname="Scenario: verify home page for mobile" name="Scenario: verify home page for mobile" time="0.018"/>
+  <testcase classname="Scenario: request for brochure" name="Given I am in the home page" time="0"/>
   <testcase classname="Scenario: request for brochure" name="Then I should see &quot;Brochure Request&quot;" time="0"/>
   <testcase classname="Scenario: request for brochure" name="And I follow link &quot;Brochure Request&quot;" time="0"/>
   <testcase classname="Scenario: request for brochure" name="Then I should see &quot;CONTACT US&quot;" time="0"/>
@@ -69,5 +107,26 @@
   <testcase classname="Scenario: request for brochure" name="And I fill in my details as follows" time="0"/>
   <testcase classname="Scenario: request for brochure" name="And I click on request my brochure" time="0"/>
   <testcase classname="Scenario: request for brochure" name="Then I should see &quot;THANK YOU REVATHI&quot;" time="0"/>
-  <testcase classname="Scenario: request for brochure" name="Scenario: request for brochure" time="0.02"/>
+  <testcase classname="Scenario: request for brochure" name="Scenario: request for brochure" time="0.016"/>
+  <testcase classname="Scenario: request for test drive" name="Given I am in the home page" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="Then I should see &quot;Request a Test Drive&quot;" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="And I follow link &quot;Request a Test Drive&quot;" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="Then I should see &quot;CONTACT US&quot;" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="And I select first model" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="And I select your details" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="And I fill in my details as follows" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="And I fill in my preferred postcode as &quot;2134&quot; and select &quot;Sydney City Lexus&quot;" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="And I click on request my test drive" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="Then I should see &quot;THANK YOU REVATHI&quot;" time="0"/>
+  <testcase classname="Scenario: request for test drive" name="Scenario: request for test drive" time="0.016"/>
+  <testcase classname="Scenario: find chatswood dealer" name="Given I am in the home page" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="Then I should see &quot;FIND A DEALER&quot;" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="And I follow link &quot;FIND A DEALER&quot;" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="Then I should see &quot;CONTACT US&quot;" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="And I fill in my details as follows" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="And I select &quot;CHATSWOOD NSW 2067&quot;" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="Then I should see &quot;Contact Lexus of Chatswood&quot;" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="And I follow link &quot;VISIT DEALER WEBSITE&quot;" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="Then I should see &quot;LEXUS OF CHATSWOOD&quot;" time="0"/>
+  <testcase classname="Scenario: find chatswood dealer" name="Scenario: find chatswood dealer" time="0.016"/>
 </testsuite>
