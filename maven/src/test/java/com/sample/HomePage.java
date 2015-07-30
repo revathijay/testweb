@@ -19,14 +19,13 @@ public class HomePage {
 	public static void i_am_in_the_home_page(WebDriver driver)
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
-		driver.get("http://www.lexus.com.au/");
+		driver.get("http://test.lexus.com.au/");
 	}
 
 	public static void i_am_in_the_mobile_home_page(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
 		driver.manage().window().setSize(new Dimension(320,480));
 		driver.get("http://m.lexus.com.au/");
-		
 		
 	}
 		
