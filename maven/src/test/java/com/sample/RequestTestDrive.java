@@ -28,14 +28,13 @@ public class RequestTestDrive {
 
 	public static void selectFirstModel(WebDriver driver) 
 	{
-	   //driver.findElement(By.cssSelector("ul li a .txt")).click();
-	   driver.findElement(By.xpath("//*[@id='testDriveForm']/div[1]/div[2]/ul/li[1]/a")).click();		
+	  driver.findElement(By.xpath("//div[contains(text(), 'CT')]")).click();			
 	}
 
 
 	public static void fillLocationTime(WebDriver driver, String postCode) 
 	{
-		driver.findElement(By.xpath("//*[@id='container']/div[2]/div/div[2]/div[3]/div/h4/a")).click();
+		driver.findElement(By.xpath("//a[contains(text(), 'Dealership')]")).click();
 		driver.findElement(By.className("postcodeSearch")).clear();
 		driver.findElement(By.className("postcodeSearch")).sendKeys(postCode);
 		driver.findElement(By.xpath("/html/body/ul/li[1]/a")).click();

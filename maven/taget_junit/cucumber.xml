@@ -1,63 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="196.75643">
-<testcase classname="Build and Price a model" name="Build and Price a model" time="46.847804">
-<system-out><![CDATA[Given I am in the home page.................................................passed
-Then I should see "COMPARE MODELS"..........................................passed
-And I follow link "COMPARE MODELS"..........................................passed
-And I enter postcode as "2134"..............................................passed
-And I fill in my details as follows.........................................passed
-And I follow link "OK"......................................................passed
-Then I select "ct200h/luxury","ct200h/f-sport" of "ct200h"..................passed
-And I follow link "OK"......................................................passed
-And I follow link "COMPARE VEHICLES"........................................passed
-Then I should see "LUXURY"..................................................passed
-Then I should see "ADD/CHANGE MODELS".......................................passed
-And I follow link "BUILD & PRICE"...........................................passed
-And I change grade to F Sport...............................................passed
-And I change colour to "Vermillion".........................................passed
-And I click on review.......................................................passed
-Then I should see "READY TO PROCEED?".......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Compare Models" name="Compare Models" time="36.515866">
-<system-out><![CDATA[Given I am in the home page.................................................passed
-Then I should see "COMPARE MODELS"..........................................passed
-And I follow link "COMPARE MODELS"..........................................passed
-And I enter postcode as "2134"..............................................passed
-And I fill in my details as follows.........................................passed
-And I follow link "OK"......................................................passed
-Then I select "ct200h/luxury","ct200h/f-sport" of "ct200h"..................passed
-And I follow link "OK"......................................................passed
-And I follow link "COMPARE VEHICLES"........................................passed
-And I wait for "driveawayprice" class.......................................passed
-Then I should see "LUXURY"..................................................passed
-Then I should see "$42,787".................................................passed
-Then I should see "F SPORT".................................................passed
-Then I should see "$52,147".................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Desktop" name="verify home page desktop" time="12.852825">
-<system-out><![CDATA[Given I am in the home page.................................................passed
-Then I should see "FIND A DEALER"...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Mobile" name="verify home page for mobile" time="4.335044">
-<system-out><![CDATA[Given I am in the mobile home page..........................................passed
-Then I should see "FIND A DEALER"...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Request for brochure" name="request for brochure" time="27.622209">
-<system-out><![CDATA[Given I am in the home page.................................................passed
-Then I should see "Brochure Request"........................................passed
-And I follow link "Brochure Request"........................................passed
-Then I should see "CONTACT US"..............................................passed
-And I select the first model................................................passed
-And I fill in my details as follows.........................................passed
-And I click on request my brochure..........................................passed
-Then I should see "THANK YOU REVATHI".......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Request for test drive" name="request for test drive" time="37.373332">
-<system-out><![CDATA[Given I am in the home page.................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="59.381112">
+<testcase classname="Request for test drive" name="request for test drive" time="59.381112">
+<failure message="org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text ('THANK YOU REVATHI') to be present in element found by By.tagName: body&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'SYDWSD4MFHZ1', ip: '10.65.2.58', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: c6526e5d-c79e-4be7-a53e-d65d7c378b03&#13;&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)&#13;&#10;&#9;at com.sample.CommonSteps.i_should_see(CommonSteps.java:32)&#13;&#10;&#9;at com.sample.StepDefenition.i_should_see(StepDefenition.java:48)&#13;&#10;&#9;at ✽.Then I should see &quot;THANK YOU REVATHI&quot;(src/test/java/feature/RequestaTestDrive.feature:17)&#13;&#10;"><![CDATA[Given I am in the home page.................................................passed
 Then I should see "Request a Test Drive"....................................passed
 And I follow link "Request a Test Drive"....................................passed
 Then I should see "CONTACT US"..............................................passed
@@ -65,20 +8,20 @@ And I select first model....................................................pass
 And I select your details...................................................passed
 And I fill in my details as follows.........................................passed
 And I fill in my preferred postcode as "2134" and select "Sydney City Lexus".passed
-And I click on request my test drive........................................passed
-Then I should see "THANK YOU REVATHI".......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Find a dealer" name="find chatswood dealer" time="31.20935">
-<system-out><![CDATA[Given I am in the home page.................................................passed
-Then I should see "FIND A DEALER"...........................................passed
-And I follow link "FIND A DEALER"...........................................passed
-Then I should see "CONTACT US"..............................................passed
-And I fill in my details as follows.........................................passed
-And I select "CHATSWOOD NSW 2067"...........................................passed
-Then I should see "Contact Lexus of Chatswood"..............................passed
-And I follow link "VISIT DEALER WEBSITE"....................................passed
-Then I should see "LEXUS OF CHATSWOOD"......................................passed
-]]></system-out>
+Then I should see "THANK YOU REVATHI".......................................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text ('THANK YOU REVATHI') to be present in element found by By.tagName: body
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'SYDWSD4MFHZ1', ip: '10.65.2.58', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c6526e5d-c79e-4be7-a53e-d65d7c378b03
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.sample.CommonSteps.i_should_see(CommonSteps.java:32)
+	at com.sample.StepDefenition.i_should_see(StepDefenition.java:48)
+	at ✽.Then I should see "THANK YOU REVATHI"(src/test/java/feature/RequestaTestDrive.feature:17)
+]]></failure>
 </testcase>
 </testsuite>

@@ -1,5 +1,6 @@
 package com.sample;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.internal.runners.statements.Fail;
@@ -25,23 +26,22 @@ public class BuildAndPrice {
 	{
 		WebDriverWait wait = new WebDriverWait(driver,50);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("chevronItem")));
-		driver.findElement(By.xpath("//*[@id='navGrade']/a/div/div/div[1]")).click();
-		//WebDriverWait wait3 = new WebDriverWait(driver,50);
+		driver.findElement(By.xpath("//div[contains(text(), 'luxury')]")).click();	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("fromPrice")));
-		driver.findElement(By.xpath("//*[@id='build-and-price']/div[1]/div[1]/div[3]/div/div/div[2]/div[3]/ul/li[2]/a/div/div[1]/div/div[3]")).click();
+		driver.findElement(By.xpath("//div[contains(text(), '+ ADD $8,330')]")).click();
+		
 	}
 
 	public static void changeColour(WebDriver driver, String colour) {
 		
-		WebDriverWait wait2 = new WebDriverWait(driver,50);
-		wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("navColours")));
-		//driver.findElement(By.xpath("//*[@id='navColours']/a/div/div/div[1]/div[1]/div")).click();
-		//*[@id="navColours"]/a/div/div/div[1]/div[2]
-		//*[@id="navColours"]/a
-		driver.findElement(By.cssSelector("#navColours a")).click();
 		WebDriverWait wait = new WebDriverWait(driver,50);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("navColours")));
+		driver.findElement(By.cssSelector("#navColours a")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("ColourListSection")));
+		//List<WebElement> Colours=driver.findElements(By.cssSelector(".premiumStandard> ul > li > a"));
 		driver.findElement(By.xpath("//*[@id='build-and-price']/div[1]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div[2]/ul/li[4]/a")).click();
+		//WebElement requiredColour = colourList.get(3);
+		//requiredColour.click();
 		
 	}
 
@@ -50,10 +50,8 @@ public class BuildAndPrice {
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("chevronItemReview")));
 		driver.findElement(By.xpath("//*[@id='nav']/a/div/div[1]")).click();
-		WebDriverWait wait1 = new WebDriverWait(driver,30);
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("requestTestDrive")));
-		//driver.findElement(By.className(".chevronItemReview")).click();
-		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("requestTestDrive")));
+				
 	}
 
 }

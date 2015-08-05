@@ -13,5 +13,5 @@ And I fill in my details as follows
 | email        |     test@lexus.com    | 
 | phone        |     0456789765        | 
 And I fill in my preferred postcode as "2134" and select "Sydney City Lexus"
-And I click on request my test drive
+#And I click on request my test drive
 Then I should see "THANK YOU REVATHI"

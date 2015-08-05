@@ -43,7 +43,6 @@ public class CommonSteps {
 		for(int i=0,j=1; i<formValues.size()-1;i+=2,j+=2)
 		{
 			driver.findElement(By.name(formValues.get(i))).sendKeys(formValues.get(j));
-			System.out.println(formValues.get(i));
 		}
 	  		
 	}
