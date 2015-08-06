@@ -22,6 +22,7 @@ import cucumber.runtime.ScenarioImpl;
 
 public class BuildAndPrice {
 
+	//code to change the grade to sports ---require changes if page changes
 	public static void changeGradeFSport(WebDriver driver)
 	{
 		WebDriverWait wait = new WebDriverWait(driver,50);
@@ -32,19 +33,22 @@ public class BuildAndPrice {
 		
 	}
 
-	public static void changeColour(WebDriver driver, String colour) {
+	//code to change the colour ---require changes if page changes
+	public static void changeColour(WebDriver driver, String colour) throws InterruptedException {
 		
 		WebDriverWait wait = new WebDriverWait(driver,50);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("navColours")));
 		driver.findElement(By.cssSelector("#navColours a")).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("ColourListSection")));
-		//List<WebElement> Colours=driver.findElements(By.cssSelector(".premiumStandard> ul > li > a"));
-		driver.findElement(By.xpath("//*[@id='build-and-price']/div[1]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div[2]/ul/li[4]/a")).click();
-		//WebElement requiredColour = colourList.get(3);
-		//requiredColour.click();
+		WebDriverWait wait1 = new WebDriverWait(driver,50);
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.className("ColourListSection")));
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.className("premiumStandard")));
+		driver.findElement(By.xpath("//div/ul/li/a[contains(@style, 'background-color: rgb(88, 0, 2)')]")).click();	
+		//driver.findElement(By.xpath("//*[@id='build-and-price']/div[1]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div[2]/ul/li[4]/a")).click();
+
 		
 	}
-
+	
+    //code to click on review
 	public static void clickOnReview(WebDriver driver) {
 		
 		WebDriverWait wait = new WebDriverWait(driver,30);

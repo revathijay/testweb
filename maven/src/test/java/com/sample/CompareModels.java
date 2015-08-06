@@ -20,6 +20,8 @@ import cucumber.runtime.ScenarioImpl;
 
 public class CompareModels {
 
+	
+	//code to select models to compare
 	public static void fillInModelDetails(WebDriver driver, String model1, String model2, String carType) {
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("carTitle")));
@@ -28,6 +30,8 @@ public class CompareModels {
 		driver.findElement(By.cssSelector("input[rel='"+model2+"']")).click();
 	}
 
+	
+	//code to fill in postcode
 	public static void fillinPostCode(WebDriver driver, String postcode) {
 		
 		driver.findElement(By.cssSelector(".rowElemFieldForm.clearfix input[name='postcode']")).sendKeys(postcode);

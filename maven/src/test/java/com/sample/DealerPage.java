@@ -19,17 +19,4 @@ import cucumber.runtime.ScenarioImpl;
 public class DealerPage {
 
 
-
-	public static void selectOption(WebDriver driver, String selectOption) 
-	{
-	driver.findElement(By.cssSelector("li.ui-menu-item")).click();
-	}
-	
-   /*
-	public static void fillindetails(WebDriver driver, String textfield, String value)
-	{
-		driver.findElement(By.id(textfield)).sendKeys(value);
-	}
-	*/
-
 }

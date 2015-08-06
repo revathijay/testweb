@@ -1,6 +1,6 @@
 Feature:Build and Price a model
 
-Scenario: Build and Price a model
+Scenario: Build and Price CT model
 Given I am in the home page
 Then I should see "COMPARE MODELS"
 And I follow link "COMPARE MODELS"

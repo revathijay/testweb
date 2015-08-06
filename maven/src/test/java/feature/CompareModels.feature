@@ -1,6 +1,6 @@
 Feature: Compare Models
 
-Scenario: Compare Models
+Scenario: Compare Models CT luxury and f sport
 Given I am in the home page
 Then I should see "COMPARE MODELS"
 And I follow link "COMPARE MODELS"

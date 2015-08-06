@@ -63,20 +63,23 @@ public class StepDefenition {
 	@Then("^I select \"([^\"]*)\"$")
 	public void i_select(String selectOption) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		DealerPage.selectOption(driver,selectOption);
-	}
-	 
-	@And("^I select first model$")
-	public void i_select_first_model()
-	{
-		RequestTestDrive.selectFirstModel(driver);
+		CommonSteps.select(driver,selectOption);
 	}
 	
+	
+	@Then("^I select \"([^\"]*)\" model$")
+	public void i_select_model(String model) throws Throwable {
+		RequestTestDrive.selectFirstModel(driver,model);
+	}
+
+	
+	/*
 	@And("^I select your details$")
 	public void i_select_your_details()
 	{
 		RequestTestDrive.selectYourDetails(driver);
 	}
+	*/
 
      @Then("^I fill in my details as follows$")
      public void i_fill_in_my_details_as_follows(List<String> formValues) throws Throwable
@@ -87,24 +90,26 @@ public class StepDefenition {
      
      @Then("^I fill in my preferred postcode as \"([^\"]*)\" and select \"([^\"]*)\"$")
      public void i_fill_in_my_preferred_postcode_as_and_select(String postCode, String area) throws Throwable {
-    	 RequestTestDrive.fillLocationTime(driver,postCode);
+    	 RequestTestDrive.fillLocationTime(driver,postCode,area);
      }
      
-   
+     /* 
      @Then("^I click on request my test drive$")
      public void i_click_on_request_my_test_drive() throws Throwable {
     	 RequestTestDrive.clickOnRequest(driver);
      }
-     
+ 
      @Then("^I select the first model$")
      public void i_select_the_first_model() throws Throwable {
        RequestBrochure.selectFirstModel(driver);
      }
+    
      
      @Then("^I click on request my brochure$")
      public void i_click_on_request_my_brochure() throws Throwable {
     	 RequestBrochure.clickOnBrochure(driver);
      }
+      */
      
      @Then("^I select \"([^\"]*)\",\"([^\"]*)\" of \"([^\"]*)\"$")
      public void i_select_of(String model1, String model2, String carType) throws Throwable {
@@ -132,9 +137,21 @@ public class StepDefenition {
      }
      
      @Then("^I wait for \"([^\"]*)\" class$")
-     public void i_wait_for_seconds(String className) throws Throwable {
-        CommonSteps.waitforSeconds(driver,className);
+     public void i_wait_for_class(String className) throws Throwable {
+        CommonSteps.waitforClass(driver,className);
      }
+     
+
+     @Then("^I select \"([^\"]*)\" from \"([^\"]*)\"$")
+     public void i_select_from(String option, String dropdownId) throws Throwable {
+    	 CommonSteps.selectOption(driver,option,dropdownId);
+     }
+     
+     @Then("^I click on \"([^\"]*)\"$")
+     public void i_click_on(String buttonText) throws Throwable {
+    	 CommonSteps.clickOn(driver,buttonText);
+     }
+     
      
     
 	@After public void close()

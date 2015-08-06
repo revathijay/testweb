@@ -26,16 +26,19 @@ import cucumber.runtime.ScenarioImpl;
 
 public class RequestBrochure {
 
+	/*
 	public static void selectFirstModel(WebDriver driver) 
 	{
 		driver.findElement(By.xpath("//*[@id='container']/div[2]/div[3]/ul/li[1]/a")).click();		
 	}
-
+	*/
+/*
 	public static void clickOnBrochure(WebDriver driver) 
 	{
 		driver.findElement(By.xpath("//*[@id='brochureForm']/div[2]/div[9]/input")).click();	
 		WebDriverWait wait = new WebDriverWait(driver,0);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("test-drive")));
+		
 	}
-
+*/
 }

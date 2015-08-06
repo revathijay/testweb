@@ -16,12 +16,15 @@ import cucumber.api.java.en.Then;
 import cucumber.runtime.ScenarioImpl;
 
 public class HomePage {
+	
+	//desktop home page
 	public static void i_am_in_the_home_page(WebDriver driver)
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
 		driver.get("http://test.lexus.com.au/");
 	}
 
+	//mobile home page
 	public static void i_am_in_the_mobile_home_page(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
 		driver.manage().window().setSize(new Dimension(320,480));

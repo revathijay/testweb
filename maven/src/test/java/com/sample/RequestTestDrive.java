@@ -26,35 +26,38 @@ import cucumber.runtime.ScenarioImpl;
 
 public class RequestTestDrive {
 
-	public static void selectFirstModel(WebDriver driver) 
+	public static void selectFirstModel(WebDriver driver, String model) 
 	{
-	  driver.findElement(By.xpath("//div[contains(text(), 'CT')]")).click();			
+	  driver.findElement(By.xpath("//div[contains(text(), '"+model+"')]")).click();			
 	}
 
 
-	public static void fillLocationTime(WebDriver driver, String postCode) 
+	public static void fillLocationTime(WebDriver driver, String postCode, String area) 
 	{
 		driver.findElement(By.xpath("//a[contains(text(), 'Dealership')]")).click();
 		driver.findElement(By.className("postcodeSearch")).clear();
 		driver.findElement(By.className("postcodeSearch")).sendKeys(postCode);
-		driver.findElement(By.xpath("/html/body/ul/li[1]/a")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'"+area+"')]")).click();	
+		//driver.findElement(By.xpath("/html/body/ul/li[1]/a")).click();
 		
 	}
+	
+	/*
 
 	public static void clickOnRequest(WebDriver driver) 
 	{
-		driver.findElement(By.xpath("//*[@id='testDriveForm']/div[3]/div[3]/div[1]/div/div[5]/input")).click();
+		driver.findElement(By.xpath("//input[contains(@value, 'REQUEST MY TEST DRIVE')]")).click();		
+		//driver.findElement(By.xpath("//*[@id='testDriveForm']/div[3]/div[3]/div[1]/div/div[5]/input")).click();
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("printDealerDetails")));
 	}
+	
 
 	public static void selectYourDetails(WebDriver driver) 
 	{
-		driver.findElement(By.xpath("//*[@id='container']/div[2]/div/div[2]/div[2]/div/h4/a")).click();
+		 driver.findElement(By.xpath("//a[contains(text(), 'Your details')]")).click();			
+		//driver.findElement(By.xpath("//*[@id='container']/div[2]/div/div[2]/div[2]/div/h4/a")).click();
 	}
-
-	
-		
-
+*/
 	
 }
