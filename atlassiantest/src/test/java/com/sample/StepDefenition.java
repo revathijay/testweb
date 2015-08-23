@@ -30,9 +30,34 @@ public class StepDefenition {
 		driver.manage().deleteAllCookies();
 	}
 	
+	//go to login page
+		@Given("^I am in the login page$")
+		public void i_am_in_the_login_page() throws Throwable {
+		    LoginPage.visitPage(driver);
+		}
+	 
+
+	    //verify the text is present
+		@Then("^I should see \"([^\"]*)\"$")
+		public void i_should_see(String text) throws Throwable {
+		   CommonSteps.i_should_see(text, driver);
+		}
+
+		 @Then("^I fill in my details as follows$")
+	     public void i_fill_in_my_details_as_follows(List<String> formValues) throws Throwable
+	     {
+	    	 CommonSteps.fillDetails(driver,formValues);
+	     }
+		 
+		 @Then("^I follow link \"([^\"]*)\"$")
+			public void i_follow_link(String link) throws Throwable {
+			   
+			    CommonSteps.followLink(driver,link);
+			}
+	
+		
      
-     
-    
+    //close the driver
 	@After public void close()
 	{
 		driver.manage().deleteAllCookies();

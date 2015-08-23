@@ -1,6 +1,9 @@
-Feature:Build and Price a model
+Feature: Create a page
 
-Scenario: Build and Price CT model
+Scenario: Create a page 
 Given I am in the login page
-And I login with username as "" and password as ""
+And I fill in my details as follows
+| username    |     Revathi           | 
+| password        |     test@lexus.com    | 
+And I follow link "Log in"
 Then I should see ""

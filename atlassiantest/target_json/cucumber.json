@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5520536681,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Create a page",
+        "description": "",
+        "id": "create-a-page;create-a-page",
+        "after": [
+          {
+            "result": {
+              "duration": 31162291,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8602365990,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the login page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 243429614,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I fill in my details as follows",
+            "match": {
+              "location": "StepDefenition.i_fill_in_my_details_as_follows(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "Revathi"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "password",
+                  "test@lexus.com"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5118407700,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Log in\"}\nCommand duration or timeout: 5.10 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027Revathis-MacBook-Air.local\u0027, ip: \u0027192.168.0.3\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.10.3\u0027, java.version: \u00271.8.0_60\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{applicationCacheEnabled\u003dtrue, rotatable\u003dfalse, handlesAlerts\u003dtrue, databaseEnabled\u003dtrue, version\u003d40.0.2, platform\u003dMAC, nativeEvents\u003dfalse, acceptSslCerts\u003dtrue, webStorageEnabled\u003dtrue, locationContextEnabled\u003dtrue, browserName\u003dfirefox, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 73e6cc1d-7849-1949-a0f9-8779c40c803a\n*** Element info: {Using\u003dlink text, value\u003dLog in}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:407)\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:243)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)\n\tat com.sample.CommonSteps.followLink(CommonSteps.java:30)\n\tat com.sample.StepDefenition.i_follow_link(StepDefenition.java:55)\n\tat ✽.And I follow link \"Log in\"(src/test/java/feature/CreatePage.feature:8)\nCaused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Log in\"}\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027Revathis-MacBook-Air.local\u0027, ip: \u0027192.168.0.3\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.10.3\u0027, java.version: \u00271.8.0_60\u0027\nDriver info: driver.version: unknown\n\tat \u003canonymous class\u003e.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous3229059121542791072webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)\n\tat \u003canonymous class\u003e.fxdriver.Timer.prototype.setTimeout/\u003c.notify(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous3229059121542791072webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I follow link \"Log in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefenition.i_follow_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I should see \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create a page",
+    "description": "",
+    "id": "create-a-page",
+    "keyword": "Feature",
+    "uri": "src/test/java/feature/CreatePage.feature"
+  }
+]
