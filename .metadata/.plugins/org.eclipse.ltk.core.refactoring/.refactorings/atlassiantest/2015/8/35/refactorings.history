@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CommonSteps.java&apos; to &apos;sample&apos;&#x0A;- Original project: &apos;atlassiantest&apos;&#x0A;- Destination element: &apos;sample&apos;&#x0A;- Original element: &apos;CommonSteps.java&apos;" description="Copy file" element1="src/test/java/com/sample/CommonSteps.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1440334811814" target="/atlassiantest/src/test/java/com/sample" units="0" version="1.0"/>
+</session>

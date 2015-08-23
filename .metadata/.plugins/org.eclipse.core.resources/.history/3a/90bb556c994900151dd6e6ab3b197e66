@@ -1,0 +1,7 @@
+Feature: Create a page
+
+Scenario: Create a page 
+Given I am in the login page
+And I login with username as "" and password as ""
+Then I should see ""
+And I 
