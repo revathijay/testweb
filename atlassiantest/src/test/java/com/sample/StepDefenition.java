@@ -49,19 +49,41 @@ public class StepDefenition {
 	    	 CommonSteps.fillDetails(driver,formValues);
 	     }
 		 
-		 @Then("^I follow link \"([^\"]*)\"$")
-			public void i_follow_link(String link) throws Throwable {
+		 @Then("^I click \"([^\"]*)\"$")
+			public void i_follow_link(String id) throws Throwable {
 			   
-			    CommonSteps.followLink(driver,link);
+			    CommonSteps.followLink(driver,id);
 			}
-	
+		 @Then("^I select \"([^\"]*)\"$")
+			public void i_select(String linkText) throws Throwable {
+			   
+			    CommonSteps.select(driver,linkText);
+			}
+		 
+		 @Then("^I press \"([^\"]*)\"$")
+			public void i_press(String linkText) throws Throwable {
+			   
+			    CommonSteps.clickOn(driver,linkText);
+			}
+		 
+		 @Then("^I should not see \"([^\"]*)\"$")
+		 public void i_should_not_see(String text) throws Throwable {
+		    CommonSteps.i_should_not_see(text,driver);
+		 }
+		 
+		 @After("@createPage")
+		 public void afterScenario() {
+		     CreatePage.deltePageAfterCreation(driver);
+		     driver.close();
+		     
+		 }
 		
-     
-    //close the driver
-	@After public void close()
-	{
-		driver.manage().deleteAllCookies();
-		driver.close();
-	}
+		 //close the driver
+			@After("@all") public void close()
+			{
+				driver.manage().deleteAllCookies();
+				driver.close();
+			}
+   
 	
 }

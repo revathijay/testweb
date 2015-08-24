@@ -25,9 +25,9 @@ public class CommonSteps {
 	
 	
 	//code to click on a link with a linktext
-	public static void followLink(WebDriver driver, String link) 
+	public static void followLink(WebDriver driver, String id) 
 	{
-		driver.findElement(By.linkText(link)).click();		
+		driver.findElement(By.id(id)).click();		
 	}
 	
 	//code to verify a text is present on the page
@@ -42,6 +42,21 @@ public class CommonSteps {
 			throw new Exception("Scenario failed");
 			}
 	}
+	
+	
+	public static void i_should_not_see(String text,WebDriver driver) throws Exception 
+	{
+		
+		String bodyText =driver.findElement(By.tagName("body")).getText();
+		if((bodyText.contains(text)))
+		{	
+		throw new Exception("Scenario failed");
+		}
+		
+		
+	}
+	
+	
 	
 	//code to fill in multiple text boxes with corresponding values
 	public static void fillDetails(WebDriver driver, List<String> formValues) 
@@ -63,6 +78,7 @@ public class CommonSteps {
 	//code to select an link from dropdown
 	public static void select(WebDriver driver, String selectOption) 
 	{
+		System.out.println(driver.findElement(By.cssSelector("a")));
 		driver.findElement(By.xpath("//a[contains(text(),'"+selectOption+"')]")).click();	
 	}
     
@@ -78,7 +94,7 @@ public class CommonSteps {
 	//code to click on an input with value given
 	public static void clickOn(WebDriver driver, String buttonText) {
 		
-		driver.findElement(By.xpath("//input[contains(@value, '"+buttonText+"')]")).click();		
+		driver.findElement(By.xpath("//button[contains(@value, '"+buttonText+"')]")).click();		
 	}
 
 	

@@ -1,41 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.515902">
-<testcase classname="Create a page" name="Create a page" time="19.515902">
-<failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log in&quot;}&#10;Command duration or timeout: 5.10 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 73e6cc1d-7849-1949-a0f9-8779c40c803a&#10;*** Element info: {Using=link text, value=Log in}&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:422)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:407)&#10;&#9;at org.openqa.selenium.By$ByLinkText.findElement(By.java:243)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)&#10;&#9;at com.sample.CommonSteps.followLink(CommonSteps.java:30)&#10;&#9;at com.sample.StepDefenition.i_follow_link(StepDefenition.java:55)&#10;&#9;at ✽.And I follow link &quot;Log in&quot;(src/test/java/feature/CreatePage.feature:8)&#10;Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log in&quot;}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'&#10;Driver info: driver.version: unknown&#10;&#9;at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous3229059121542791072webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)&#10;&#9;at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous3229059121542791072webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)&#10;"><![CDATA[Given I am in the login page................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="26.203399">
+<testcase classname="Create a page" name="Create a page" time="26.203399">
+<system-out><![CDATA[Given I am in the login page................................................passed
 And I fill in my details as follows.........................................passed
-And I follow link "Log in"..................................................failed
-Then I should see ""........................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Log in"}
-Command duration or timeout: 5.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 73e6cc1d-7849-1949-a0f9-8779c40c803a
-*** Element info: {Using=link text, value=Log in}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:407)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at com.sample.CommonSteps.followLink(CommonSteps.java:30)
-	at com.sample.StepDefenition.i_follow_link(StepDefenition.java:55)
-	at ✽.And I follow link "Log in"(src/test/java/feature/CreatePage.feature:8)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Log in"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous3229059121542791072webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous3229059121542791072webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-]]></failure>
+And I click "login".........................................................passed
+Then I should see "Dashboard"...............................................passed
+And I click "space-menu-link"...............................................passed
+And I select "QA home"......................................................passed
+And I click "quick-create-page-button"......................................passed
+And I fill in my details as follows.........................................passed
+And I press "Save"..........................................................passed
+Then I should see "TestSamplePage"..........................................passed
+]]></system-out>
 </testcase>
 </testsuite>
