@@ -3,15 +3,38 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 4653449090,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
         "line": 3,
-        "name": "",
+        "name": "Create a page",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "create-a-page;create-a-page",
+        "after": [
+          {
+            "result": {
+              "duration": 23656839,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4054204938,
+              "duration": 5605399152,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 4466500077,
+              "duration": 5389040551,
               "status": "passed"
             },
             "line": 5,
@@ -45,10 +68,126 @@
           },
           {
             "result": {
-              "duration": 1610921404,
-              "status": "passed"
+              "duration": 30121206984,
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat com.sample.StepDefenition.i_should_see(StepDefenition.java:89)\n\tat ✽.Then I should see \"Dashsddsboard\"(CreatePage.feature:6)\n",
+              "status": "failed"
             },
             "line": 6,
+            "name": "I should see \"Dashsddsboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dashsddsboard",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I create a page \"sampletestPage\" in space \"QA home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sampletestPage",
+                  "offset": 17
+                },
+                {
+                  "val": "QA home",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefenition.i_create_a_page_in_space(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should see \"sampletestPage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sampletestPage",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "Create a page",
+    "description": "",
+    "id": "create-a-page",
+    "keyword": "Feature",
+    "uri": "CreatePage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4627404456,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am in the login page",
+            "match": {
+              "location": "StepDefenition.i_am_in_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4570927280,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.\nCommand duration or timeout: 16 milliseconds\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027Revathis-MacBook-Air.local\u0027, ip: \u0027192.168.0.5\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.10.3\u0027, java.version: \u00271.8.0_60\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{applicationCacheEnabled\u003dtrue, rotatable\u003dfalse, handlesAlerts\u003dtrue, databaseEnabled\u003dtrue, version\u003d40.0.2, platform\u003dMAC, nativeEvents\u003dfalse, acceptSslCerts\u003dtrue, webStorageEnabled\u003dtrue, locationContextEnabled\u003dtrue, browserName\u003dfirefox, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 22c45c34-ae19-9943-a038-8e4b1c5afeeb\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:319)\n\tat com.sample.StepDefenition.i_login_with_userName_as_and_password_as(StepDefenition.java:56)\n\tat ✽.And I login with userName as \"rekhasndr@gmail.com\" and password as \"Jan@2013\"(PermissionRestrictions.feature:4)\nCaused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027Revathis-MacBook-Air.local\u0027, ip: \u0027192.168.0.5\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.10.3\u0027, java.version: \u00271.8.0_60\u0027\nDriver info: driver.version: unknown\n\tat \u003canonymous class\u003e.nsCommandProcessor.prototype.execute(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12350)\n\tat \u003canonymous class\u003e.Dispatcher.executeAs/\u003c(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9089)\n\tat \u003canonymous class\u003e.Resource.prototype.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9236)\n\tat \u003canonymous class\u003e.Dispatcher.prototype.dispatch(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9183)\n\tat \u003canonymous class\u003e.WebDriverServer/\u003c.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12136)\n\tat \u003canonymous class\u003e.createHandlerFunc/\u003c(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)\n\tat \u003canonymous class\u003e.ServerHandler.prototype.handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)\n\tat \u003canonymous class\u003e.Connection.prototype.process(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)\n\tat \u003canonymous class\u003e.RequestReader.prototype._handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)\n\tat \u003canonymous class\u003e.RequestReader.prototype._processBody(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)\n\tat \u003canonymous class\u003e.RequestReader.prototype.onInputStreamReady(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I login with userName as \"rekhasndr@gmail.com\" and password as \"Jan@2013\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rekhasndr@gmail.com",
+                  "offset": 26
+                },
+                {
+                  "val": "Jan@2013",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefenition.i_login_with_userName_as_and_password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
             "name": "I should see \"Dashboard\"",
             "match": {
               "arguments": [
@@ -63,10 +202,9 @@
           },
           {
             "result": {
-              "duration": 2077611959,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 7,
+            "line": 6,
             "name": "I create a user with username as \"testpermissions\" and email as \"testuser@gmail.com\"",
             "match": {
               "arguments": [
@@ -85,10 +223,9 @@
           },
           {
             "result": {
-              "duration": 2989848233,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 8,
+            "line": 7,
             "name": "I should see \"1 user has been created.\"",
             "match": {
               "arguments": [
@@ -107,7 +244,7 @@
         "before": [
           {
             "result": {
-              "duration": 4188916433,
+              "duration": 3502806820,
               "status": "passed"
             },
             "match": {
@@ -115,19 +252,30 @@
             }
           }
         ],
-        "line": 10,
+        "line": 9,
         "name": "Permission restrictions on a page",
         "description": "",
         "id": "permission-restrictions-on-a-page;permission-restrictions-on-a-page",
+        "after": [
+          {
+            "result": {
+              "duration": 10471085,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.\nCommand duration or timeout: 10 milliseconds\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027Revathis-MacBook-Air.local\u0027, ip: \u0027192.168.0.5\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.10.3\u0027, java.version: \u00271.8.0_60\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{applicationCacheEnabled\u003dtrue, rotatable\u003dfalse, handlesAlerts\u003dtrue, databaseEnabled\u003dtrue, version\u003d40.0.2, platform\u003dMAC, nativeEvents\u003dfalse, acceptSslCerts\u003dtrue, webStorageEnabled\u003dtrue, locationContextEnabled\u003dtrue, browserName\u003dfirefox, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 22c45c34-ae19-9943-a038-8e4b1c5afeeb\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:699)\n\tat com.sample.StepDefenition.close(StepDefenition.java:95)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:497)\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:223)\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:211)\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:205)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:497)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\nCaused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027Revathis-MacBook-Air.local\u0027, ip: \u0027192.168.0.5\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.10.3\u0027, java.version: \u00271.8.0_60\u0027\nDriver info: driver.version: unknown\n\tat \u003canonymous class\u003e.nsCommandProcessor.prototype.execute(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12350)\n\tat \u003canonymous class\u003e.Dispatcher.executeAs/\u003c(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9089)\n\tat \u003canonymous class\u003e.Resource.prototype.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9236)\n\tat \u003canonymous class\u003e.Dispatcher.prototype.dispatch(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9183)\n\tat \u003canonymous class\u003e.WebDriverServer/\u003c.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12136)\n\tat \u003canonymous class\u003e.createHandlerFunc/\u003c(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)\n\tat \u003canonymous class\u003e.ServerHandler.prototype.handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)\n\tat \u003canonymous class\u003e.Connection.prototype.process(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)\n\tat \u003canonymous class\u003e.RequestReader.prototype._handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)\n\tat \u003canonymous class\u003e.RequestReader.prototype._processBody(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)\n\tat \u003canonymous class\u003e.RequestReader.prototype.onInputStreamReady(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefenition.close()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3027506668,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 12,
+            "line": 11,
             "name": "I navigate to page \"sampletestPage\"",
             "match": {
               "arguments": [
@@ -142,10 +290,9 @@
           },
           {
             "result": {
-              "duration": 2028428871,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 13,
+            "line": 12,
             "name": "I should see \"sampletestPage\"",
             "match": {
               "arguments": [
@@ -160,10 +307,9 @@
           },
           {
             "result": {
-              "duration": 1664397035,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 14,
+            "line": 13,
             "name": "I associate the restriction of \"Can view\" to the user \"testpermissions\"",
             "match": {
               "arguments": [
@@ -180,6 +326,12 @@
             },
             "keyword": "And "
           }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@all"
+          }
         ]
       }
     ],
@@ -187,6 +339,6 @@
     "description": "",
     "id": "permission-restrictions-on-a-page",
     "keyword": "Feature",
-    "uri": "src/test/java/feature/PermissionRestrictions.feature"
+    "uri": "PermissionRestrictions.feature"
   }
 ]

@@ -24,12 +24,7 @@ import cucumber.runtime.ScenarioImpl;
 public class ConfluencePage {
 	
 	
-	public ConfluencePage() 
-	{
-		
-	}
-	
-	
+	RestrictionSetPage restrictionSetPage;
 	
 	public ConfluencePage createNewPage(WebDriver driver, String title, String space) 
 	{
@@ -67,38 +62,8 @@ public class ConfluencePage {
 		
 		driver.findElement(By.id("action-menu-link")).click();
 		driver.findElement(By.id("action-page-permissions-link")).click();
-		
-		 if(!(driver.findElement(By.cssSelector("a .select2-chosen")).getText()).contains("Edit restrictions"))
-		 {
-		
-		driver.findElement(By.xpath("//a[contains(@href,\"javascript:void(0)\")]")).click();	 
-		Select dropdown = new Select(driver.findElement(By.id("page-restrictions-dialog-selector")));
-
-       
-		dropdown.selectByVisibleText("Edit restrictions");
-		 }
-		driver.findElement(By.id("s2id_autogen2")).sendKeys(userName);
-
-		WebDriverWait wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("select2-result-selectable")));
-		
-		List<WebElement> listOfSpans = driver.findElements(By.cssSelector(".select2-results li"));
-		for(WebElement li : listOfSpans) {
-		    String text = li.getText();
-		    System.out.println(text);
-		    if(text.equals(userName)) {
-		    	li.click();
-		    	//Select dropdown1 = new Select(driver.findElement(By.id("page-restrictions-permission-selector")));
-				//dropdown1.selectByVisibleText(restrictionType);
-				driver.findElement(By.id("page-restrictions-add-button")).click();
-				driver.findElement(By.id("page-restrictions-dialog-save-button")).click();
-			
-		        break;
-		    }
-		    else{
-		    	 throw new IllegalStateException("no user found");
-		    }
-		}
+		restrictionSetPage.applyRestrictiontoUsers( driver,userName); 
+		 
 		return this;
 		
 	}

@@ -1,13 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="26.108336">
-<testcase classname="Permission restrictions on a page" name="Permission restrictions on a page" time="26.108336">
-<system-out><![CDATA[Given I am in the login page................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="58.504363">
+<testcase classname="Create a page" name="Create a page" time="45.792753">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at com.sample.StepDefenition.i_should_see(StepDefenition.java:89)&#10;&#9;at ✽.Then I should see &quot;Dashsddsboard&quot;(CreatePage.feature:6)&#10;"><![CDATA[Given I am in the login page................................................passed
 And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013".passed
-Then I should see "Dashboard"...............................................passed
-And I create a user with username as "testpermissions" and email as "testuser@gmail.com".passed
-Then I should see "1 user has been created."................................passed
-When I navigate to page "sampletestPage"....................................passed
-Then I should see "sampletestPage"..........................................passed
-And I associate the restriction of "Can view" to the user "testpermissions".passed
-]]></system-out>
+Then I should see "Dashsddsboard"...........................................failed
+And I create a page "sampletestPage" in space "QA home".....................skipped
+Then I should see "sampletestPage"..........................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.sample.StepDefenition.i_should_see(StepDefenition.java:89)
+	at ✽.Then I should see "Dashsddsboard"(CreatePage.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Permission restrictions on a page" name="Permission restrictions on a page" time="12.71161">
+<failure message="org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.&#10;Command duration or timeout: 16 milliseconds&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 22c45c34-ae19-9943-a038-8e4b1c5afeeb&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:422)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:319)&#10;&#9;at com.sample.StepDefenition.i_login_with_userName_as_and_password_as(StepDefenition.java:56)&#10;&#9;at ✽.And I login with userName as &quot;rekhasndr@gmail.com&quot; and password as &quot;Jan@2013&quot;(PermissionRestrictions.feature:4)&#10;Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'&#10;Driver info: driver.version: unknown&#10;&#9;at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12350)&#10;&#9;at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9089)&#10;&#9;at &lt;anonymous class&gt;.Resource.prototype.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9236)&#10;&#9;at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9183)&#10;&#9;at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12136)&#10;&#9;at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)&#10;&#9;at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)&#10;&#9;at &lt;anonymous class&gt;.Connection.prototype.process(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)&#10;&#9;at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)&#10;&#9;at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)&#10;&#9;at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)&#10;"><![CDATA[Given I am in the login page................................................passed
+And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013".failed
+Then I should see "Dashboard"...............................................skipped
+And I create a user with username as "testpermissions" and email as "testuser@gmail.com".skipped
+Then I should see "1 user has been created."................................skipped
+When I navigate to page "sampletestPage"....................................skipped
+Then I should see "sampletestPage"..........................................skipped
+And I associate the restriction of "Can view" to the user "testpermissions".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 22c45c34-ae19-9943-a038-8e4b1c5afeeb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:319)
+	at com.sample.StepDefenition.i_login_with_userName_as_and_password_as(StepDefenition.java:56)
+	at ✽.And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013"(PermissionRestrictions.feature:4)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at <anonymous class>.nsCommandProcessor.prototype.execute(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12350)
+	at <anonymous class>.Dispatcher.executeAs/<(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9089)
+	at <anonymous class>.Resource.prototype.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9236)
+	at <anonymous class>.Dispatcher.prototype.dispatch(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9183)
+	at <anonymous class>.WebDriverServer/<.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12136)
+	at <anonymous class>.createHandlerFunc/<(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
+	at <anonymous class>.ServerHandler.prototype.handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
+	at <anonymous class>.Connection.prototype.process(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
+	at <anonymous class>.RequestReader.prototype._handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
+	at <anonymous class>.RequestReader.prototype._processBody(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
+	at <anonymous class>.RequestReader.prototype.onInputStreamReady(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+]]></failure>
 </testcase>
 </testsuite>

@@ -2,12 +2,15 @@ package com.sample;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+import static org.junit.Assert.assertTrue;
+import org.junit.Assert;
 import org.junit.internal.runners.statements.Fail;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.thoughtworks.selenium.Selenium;
 
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
@@ -27,6 +30,8 @@ public class StepDefenition {
 	LoginPage login;
 	ConfluencePage createPage;
 	UserManagementPage userManagementPage;
+	CommonStepsPage commonStepsPage;
+	
 	
 	@Before public void setup() 
 	{ 
@@ -37,19 +42,24 @@ public class StepDefenition {
 	
 	
 	//go to login page
-			@Given("^I am in the login page$")
-			public void i_am_in_the_login_page() throws Throwable {
-			   login=new LoginPage(driver,url);
-			}
+	@Given("^I am in the login page$")
+	 public void i_am_in_the_login_page() throws Throwable 
+	{
+	    login=new LoginPage(driver,url);
+    }
 	
+	//login with valid credentials
 	@Given("^I login with userName as \"([^\"]*)\" and password as \"([^\"]*)\"$")
-	public void i_login_with_userName_as_and_password_as(String userName, String Password) throws Throwable {
+	public void i_login_with_userName_as_and_password_as(String userName, String Password) throws Throwable 
+	{
 	  createPage=login.loginWIthUserNameandPassword(driver,userName,Password);
+	  assertTrue(driver.getTitle().equals("Dashboard - Confluence"));
 	}
 	
 	
 	@Then("^I create a page \"([^\"]*)\" in space \"([^\"]*)\"$")
-	public void i_create_a_page_in_space(String title, String space) throws Throwable {
+	public void i_create_a_page_in_space(String title, String space) throws Throwable 
+	{
 		createPage=createPage.createNewPage(driver,title,space);
 	}
 	
@@ -72,63 +82,17 @@ public class StepDefenition {
 		createPage.applyRestrictions(driver,restrictionType,userName);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	 
+	//verify the text is present
+	@Then("^I should see \"([^\"]*)\"$")
+	public void i_should_see(String text) throws Throwable 
+	{
+		assertTrue(commonStepsPage.i_should_see(text, driver));
+	}
 
-	    //verify the text is present
-		@Then("^I should see \"([^\"]*)\"$")
-		public void i_should_see(String text) throws Throwable {
-		   CommonSteps.i_should_see(text, driver);
-		}
-
-		 @Then("^I fill in my details as follows$")
-	     public void i_fill_in_my_details_as_follows(List<String> formValues) throws Throwable
-	     {
-	    	 CommonSteps.fillDetails(driver,formValues);
-	     }
-		 
-		 @Then("^I click \"([^\"]*)\"$")
-			public void i_follow_link(String id) throws Throwable {
-			   
-			    CommonSteps.followLink(driver,id);
-			}
-		 @Then("^I select \"([^\"]*)\"$")
-			public void i_select(String linkText) throws Throwable {
-			   
-			    CommonSteps.select(driver,linkText);
-			}
-		 
-		 @Then("^I press \"([^\"]*)\"$")
-			public void i_press(String linkText) throws Throwable {
-			   
-			    CommonSteps.clickOn(driver,linkText);
-			}
-		 
-		 @Then("^I should not see \"([^\"]*)\"$")
-		 public void i_should_not_see(String text) throws Throwable {
-		    CommonSteps.i_should_not_see(text,driver);
-		 }
-		 
-		 @After("@createPage")
-		 public void afterScenario() {
-		    // CreatePage.deltePageAfterCreation(driver);
-		     driver.close();
-		     
-		 }
-		
-		 //close the driver
-			@After("@all") public void close()
-			{
-				driver.manage().deleteAllCookies();
-				driver.close();
-			}
-   
-	
+	//close the driver
+	@After("@all") public void close()
+	{
+		driver.manage().deleteAllCookies();
+		driver.close();
+	}	
 }

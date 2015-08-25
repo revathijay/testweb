@@ -21,26 +21,22 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.runtime.ScenarioImpl;
 
-public class LoginPage {
-	
-
-	public LoginPage(WebDriver driver, String url) 
-	{
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
-		driver.get(url);
-	}
-	
-	public LoginPage() 
-	{
+public class CommonStepsPage {
 		
-	}
-	
-	public ConfluencePage loginWIthUserNameandPassword(WebDriver driver, String userName, String password) 
+	//code to verify a text is present on the page
+	public static boolean i_should_see(String text,WebDriver driver) throws Exception 
 	{
-		driver.findElement(By.name("username")).sendKeys(userName);
-		driver.findElement(By.name("password")).sendKeys(password);
-		driver.findElement(By.id("login")).click();
-		return new ConfluencePage();
+		try{
+			WebDriverWait wait = new WebDriverWait(driver, 30);
+			wait.until(ExpectedConditions.textToBePresentInElement(By.tagName("body"), text));
+		}
+		
+		catch(org.openqa.selenium.TimeoutException e){
+			return false;
+		}
+		
+		return true;
+		
 	}
 	
 }
