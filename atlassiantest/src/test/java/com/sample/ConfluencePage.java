@@ -67,12 +67,16 @@ public class ConfluencePage {
 		
 		driver.findElement(By.id("action-menu-link")).click();
 		driver.findElement(By.id("action-page-permissions-link")).click();
-		driver.findElement(By.xpath("//a[contains(@href,\"javascript:void(0)\")]")).click();
+		
+		 if(!(driver.findElement(By.cssSelector("a .select2-chosen")).getText()).contains("Edit restrictions"))
+		 {
+		
+		driver.findElement(By.xpath("//a[contains(@href,\"javascript:void(0)\")]")).click();	 
 		Select dropdown = new Select(driver.findElement(By.id("page-restrictions-dialog-selector")));
 
-
+       
 		dropdown.selectByVisibleText("Edit restrictions");
-		
+		 }
 		driver.findElement(By.id("s2id_autogen2")).sendKeys(userName);
 
 		WebDriverWait wait = new WebDriverWait(driver, 15);

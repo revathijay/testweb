@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4075652242,
+              "duration": 4054204938,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 4242555070,
+              "duration": 4466500077,
               "status": "passed"
             },
             "line": 5,
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 1560668803,
+              "duration": 1610921404,
               "status": "passed"
             },
             "line": 6,
@@ -63,7 +63,7 @@
           },
           {
             "result": {
-              "duration": 2042347325,
+              "duration": 2077611959,
               "status": "passed"
             },
             "line": 7,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 2971598600,
+              "duration": 2989848233,
               "status": "passed"
             },
             "line": 8,
@@ -107,7 +107,7 @@
         "before": [
           {
             "result": {
-              "duration": 4206040104,
+              "duration": 4188916433,
               "status": "passed"
             },
             "match": {
@@ -124,7 +124,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3068363981,
+              "duration": 3027506668,
               "status": "passed"
             },
             "line": 12,
@@ -142,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 1983527454,
+              "duration": 2028428871,
               "status": "passed"
             },
             "line": 13,
@@ -160,9 +160,8 @@
           },
           {
             "result": {
-              "duration": 946436527,
-              "error_message": "java.lang.IllegalStateException: no user found\r\n\tat com.sample.ConfluencePage.applyRestrictions(ConfluencePage.java:95)\r\n\tat com.sample.StepDefenition.i_associate_the_restriction_of_to_the_user(StepDefenition.java:72)\r\n\tat ✽.And I associate the restriction of \"Can view\" to the user \"testpermissions\"(src/test/java/feature/PermissionRestrictions.feature:14)\r\n",
-              "status": "failed"
+              "duration": 1664397035,
+              "status": "passed"
             },
             "line": 14,
             "name": "I associate the restriction of \"Can view\" to the user \"testpermissions\"",
