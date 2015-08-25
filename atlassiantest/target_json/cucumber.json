@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4431981958,
+              "duration": 4075652242,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 5297096891,
+              "duration": 4242555070,
               "status": "passed"
             },
             "line": 5,
@@ -42,6 +42,64 @@
               "location": "StepDefenition.i_login_with_userName_as_and_password_as(String,String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1560668803,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see \"Dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dashboard",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2042347325,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I create a user with username as \"testpermissions\" and email as \"testuser@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testpermissions",
+                  "offset": 34
+                },
+                {
+                  "val": "testuser@gmail.com",
+                  "offset": 65
+                }
+              ],
+              "location": "StepDefenition.i_create_a_user_with_username_as_and_email_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2971598600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see \"1 user has been created.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 user has been created.",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefenition.i_should_see(String)"
+            },
+            "keyword": "Then "
           }
         ]
       },
@@ -49,7 +107,7 @@
         "before": [
           {
             "result": {
-              "duration": 7648386041,
+              "duration": 4206040104,
               "status": "passed"
             },
             "match": {
@@ -57,7 +115,7 @@
             }
           }
         ],
-        "line": 8,
+        "line": 10,
         "name": "Permission restrictions on a page",
         "description": "",
         "id": "permission-restrictions-on-a-page;permission-restrictions-on-a-page",
@@ -66,10 +124,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2912181637,
+              "duration": 3068363981,
               "status": "passed"
             },
-            "line": 10,
+            "line": 12,
             "name": "I navigate to page \"sampletestPage\"",
             "match": {
               "arguments": [
@@ -84,10 +142,10 @@
           },
           {
             "result": {
-              "duration": 1704660274,
+              "duration": 1983527454,
               "status": "passed"
             },
-            "line": 11,
+            "line": 13,
             "name": "I should see \"sampletestPage\"",
             "match": {
               "arguments": [
@@ -102,12 +160,12 @@
           },
           {
             "result": {
-              "duration": 970592479,
-              "error_message": "java.lang.IllegalStateException: no user found\r\n\tat com.sample.ConfluencePage.applyRestrictions(ConfluencePage.java:95)\r\n\tat com.sample.StepDefenition.i_associate_the_restriction_of_to_the_user(StepDefenition.java:72)\r\n\tat ✽.And I associate the restriction of \"Can view\" to the user \"saadasd\"(src/test/java/feature/PermissionRestrictions.feature:12)\r\n",
+              "duration": 946436527,
+              "error_message": "java.lang.IllegalStateException: no user found\r\n\tat com.sample.ConfluencePage.applyRestrictions(ConfluencePage.java:95)\r\n\tat com.sample.StepDefenition.i_associate_the_restriction_of_to_the_user(StepDefenition.java:72)\r\n\tat ✽.And I associate the restriction of \"Can view\" to the user \"testpermissions\"(src/test/java/feature/PermissionRestrictions.feature:14)\r\n",
               "status": "failed"
             },
-            "line": 12,
-            "name": "I associate the restriction of \"Can view\" to the user \"saadasd\"",
+            "line": 14,
+            "name": "I associate the restriction of \"Can view\" to the user \"testpermissions\"",
             "match": {
               "arguments": [
                 {
@@ -115,7 +173,7 @@
                   "offset": 32
                 },
                 {
-                  "val": "saadasd",
+                  "val": "testpermissions",
                   "offset": 55
                 }
               ],

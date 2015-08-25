@@ -62,7 +62,7 @@ public class StepDefenition {
 
 	@When("^I navigate to page \"([^\"]*)\"$")
 	public void i_navigate_to_page(String pageTitle) throws Throwable {
-		//createPage=userManagementPage.navigatetoDashboard(driver);
+		createPage=userManagementPage.navigatetoDashboard(driver);
 		createPage.clickonSpecificPage(driver,pageTitle);
 		
 	}
