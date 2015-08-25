@@ -79,7 +79,9 @@ public class StepDefenition {
 
 	@Then("^I associate the restriction of \"([^\"]*)\" to the user \"([^\"]*)\"$")
 	public void i_associate_the_restriction_of_to_the_user(String restrictionType, String userName) throws Throwable {
-		createPage.applyRestrictions(driver,restrictionType,userName);
+		restrictionSetPage=createPage.navigateToRestrictionPage(driver);
+		restrictionSetPage.selectRestrictionViewOption(driver); 
+		restrictionSetPage.assertUser(driver,userName);
 	}
 	
 	//verify the text is present

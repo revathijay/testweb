@@ -57,14 +57,12 @@ public class ConfluencePage {
 	}
 	
 	
-	public ConfluencePage applyRestrictions(WebDriver driver, String restrictionType, String userName) 
+	public RestrictionSetPage navigateToRestrictionPage(WebDriver driver) 
 	{
 		
 		driver.findElement(By.id("action-menu-link")).click();
 		driver.findElement(By.id("action-page-permissions-link")).click();
-		restrictionSetPage.applyRestrictiontoUsers( driver,userName); 
-		 
-		return this;
+		return new RestrictionSetPage();
 		
 	}
 	
