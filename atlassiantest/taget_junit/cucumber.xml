@@ -1,64 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="58.504363">
-<testcase classname="Create a page" name="Create a page" time="45.792753">
-<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at com.sample.StepDefenition.i_should_see(StepDefenition.java:89)&#10;&#9;at ✽.Then I should see &quot;Dashsddsboard&quot;(CreatePage.feature:6)&#10;"><![CDATA[Given I am in the login page................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="1954.851275">
+<testcase classname="Create a page" name="Create a page" time="43.351291">
+<failure message="org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text ('Dashsddsboard') to be present in element found by By.tagName: body&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: ec4715c0-b55c-9e4e-9725-78c2b15dd3be&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)&#10;&#9;at com.sample.CommonStepsPage.i_should_see(CommonStepsPage.java:30)&#10;&#9;at com.sample.StepDefenition.i_should_see(StepDefenition.java:89)&#10;&#9;at ✽.Then I should see &quot;Dashsddsboard&quot;(CreatePage.feature:6)&#10;"><![CDATA[Given I am in the login page................................................passed
 And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013".passed
 Then I should see "Dashsddsboard"...........................................failed
 And I create a page "sampletestPage" in space "QA home".....................skipped
 Then I should see "sampletestPage"..........................................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
+org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text ('Dashsddsboard') to be present in element found by By.tagName: body
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ec4715c0-b55c-9e4e-9725-78c2b15dd3be
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.sample.CommonStepsPage.i_should_see(CommonStepsPage.java:30)
 	at com.sample.StepDefenition.i_should_see(StepDefenition.java:89)
 	at ✽.Then I should see "Dashsddsboard"(CreatePage.feature:6)
 ]]></failure>
 </testcase>
-<testcase classname="Permission restrictions on a page" name="Permission restrictions on a page" time="12.71161">
-<failure message="org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.&#10;Command duration or timeout: 16 milliseconds&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 22c45c34-ae19-9943-a038-8e4b1c5afeeb&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:422)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:319)&#10;&#9;at com.sample.StepDefenition.i_login_with_userName_as_and_password_as(StepDefenition.java:56)&#10;&#9;at ✽.And I login with userName as &quot;rekhasndr@gmail.com&quot; and password as &quot;Jan@2013&quot;(PermissionRestrictions.feature:4)&#10;Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'&#10;Driver info: driver.version: unknown&#10;&#9;at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12350)&#10;&#9;at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9089)&#10;&#9;at &lt;anonymous class&gt;.Resource.prototype.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9236)&#10;&#9;at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9183)&#10;&#9;at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12136)&#10;&#9;at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)&#10;&#9;at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)&#10;&#9;at &lt;anonymous class&gt;.Connection.prototype.process(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)&#10;&#9;at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)&#10;&#9;at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)&#10;&#9;at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)&#10;"><![CDATA[Given I am in the login page................................................passed
-And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013".failed
-Then I should see "Dashboard"...............................................skipped
-And I create a user with username as "testpermissions" and email as "testuser@gmail.com".skipped
+<testcase classname="Permission restrictions on a page" name="Permission restrictions on a page" time="1911.499984">
+<failure message="org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'&#10;Driver info: driver.version: RemoteWebDriver&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:431)&#10;&#9;at org.openqa.selenium.By$ByName.findElement(By.java:300)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)&#10;&#9;at com.sample.UserManagementPage.createUser(UserManagementPage.java:36)&#10;&#9;at com.sample.StepDefenition.i_create_a_user_with_username_as_and_email_as(StepDefenition.java:70)&#10;&#9;at ✽.And I create a user with username as &quot;testpermissions&quot; and email as &quot;testuser@gmail.com&quot;(PermissionRestrictions.feature:6)&#10;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused&#10;&#9;at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)&#10;&#9;at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)&#10;&#9;at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)&#10;&#9;at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#10;&#9;at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)&#10;&#9;at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)&#10;&#9;at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#10;&#9;at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)&#10;&#9;at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)&#10;&#9;at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)&#10;&#9;at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:161)&#10;&#9;at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)&#10;&#9;at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:168)&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:392)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:431)&#10;&#9;at org.openqa.selenium.By$ByName.findElement(By.java:300)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)&#10;&#9;at com.sample.UserManagementPage.createUser(UserManagementPage.java:36)&#10;&#9;at com.sample.StepDefenition.i_create_a_user_with_username_as_and_email_as(StepDefenition.java:70)&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:497)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:37)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:13)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:31)&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:299)&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#10;&#9;at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:98)&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:497)&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#10;Caused by: java.net.ConnectException: Connection refused&#10;&#9;at java.net.PlainSocketImpl.socketConnect(Native Method)&#10;&#9;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)&#10;&#9;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)&#10;&#9;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)&#10;&#9;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)&#10;&#9;at java.net.Socket.connect(Socket.java:589)&#10;&#9;at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)&#10;&#9;at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)&#10;&#9;... 66 more&#10;"><![CDATA[Given I am in the login page................................................passed
+And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013".passed
+Then I should see "Dashboard"...............................................passed
+And I create a user with username as "testpermissions" and email as "testuser@gmail.com".failed
 Then I should see "1 user has been created."................................skipped
 When I navigate to page "sampletestPage"....................................skipped
 Then I should see "sampletestPage"..........................................skipped
 And I associate the restriction of "Can view" to the user "testpermissions".skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 16 milliseconds
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
 System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 22c45c34-ae19-9943-a038-8e4b1c5afeeb
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:319)
-	at com.sample.StepDefenition.i_login_with_userName_as_and_password_as(StepDefenition.java:56)
-	at ✽.And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013"(PermissionRestrictions.feature:4)
-Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'Revathis-MacBook-Air.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at <anonymous class>.nsCommandProcessor.prototype.execute(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12350)
-	at <anonymous class>.Dispatcher.executeAs/<(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9089)
-	at <anonymous class>.Resource.prototype.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9236)
-	at <anonymous class>.Dispatcher.prototype.dispatch(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9183)
-	at <anonymous class>.WebDriverServer/<.handle(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12136)
-	at <anonymous class>.createHandlerFunc/<(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
-	at <anonymous class>.ServerHandler.prototype.handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
-	at <anonymous class>.Connection.prototype.process(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
-	at <anonymous class>.RequestReader.prototype._handleResponse(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
-	at <anonymous class>.RequestReader.prototype._processBody(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
-	at <anonymous class>.RequestReader.prototype.onInputStreamReady(file:///var/folders/y7/pktx4_dn2490mk1f2fp4p4780000gn/T/anonymous8736136015797830677webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:431)
+	at org.openqa.selenium.By$ByName.findElement(By.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.sample.UserManagementPage.createUser(UserManagementPage.java:36)
+	at com.sample.StepDefenition.i_create_a_user_with_username_as_and_email_as(StepDefenition.java:70)
+	at ✽.And I create a user with username as "testpermissions" and email as "testuser@gmail.com"(PermissionRestrictions.feature:6)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:161)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:168)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:392)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:431)
+	at org.openqa.selenium.By$ByName.findElement(By.java:300)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.sample.UserManagementPage.createUser(UserManagementPage.java:36)
+	at com.sample.StepDefenition.i_create_a_user_with_username_as_and_email_as(StepDefenition.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 66 more
 ]]></failure>
 </testcase>
 </testsuite>

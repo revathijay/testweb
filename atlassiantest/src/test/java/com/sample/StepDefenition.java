@@ -31,6 +31,7 @@ public class StepDefenition {
 	ConfluencePage createPage;
 	UserManagementPage userManagementPage;
 	CommonStepsPage commonStepsPage;
+	RestrictionSetPage restrictionSetPage;
 	
 	
 	@Before public void setup() 
@@ -81,7 +82,11 @@ public class StepDefenition {
 	public void i_associate_the_restriction_of_to_the_user(String restrictionType, String userName) throws Throwable {
 		restrictionSetPage=createPage.navigateToRestrictionPage(driver);
 		restrictionSetPage.selectRestrictionViewOption(driver); 
-		restrictionSetPage.assertUser(driver,userName);
+		assertTrue(restrictionSetPage.assertUser(driver,userName);
+		if(restrictionSetPage.assertUser(driver,userName))
+		{
+			restrictionSetPage.setrestrictions(driver);
+		}
 	}
 	
 	//verify the text is present
