@@ -978,3 +978,17 @@ Caused by: java.net.UnknownHostException: download.eclipse.org
 2015-08-23 23:29:30,825 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/revs/testweb/atlassiantest/src/main/resources
 2015-08-23 23:29:30,827 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2015-08-23 23:29:30,827 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/revs/testweb/atlassiantest/src/test/resources
+2015-08-26 08:25:15,717 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: atlassian:atlassiantest:0.0.1-SNAPSHOT @ /Users/revs/testweb/atlassiantest/pom.xml.
+2015-08-26 08:25:16,651 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.lexus.test:maven:0.0.1-SNAPSHOT @ /Users/revs/testweb/maven/pom.xml.
+2015-08-26 08:25:18,326 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 08:25:18,342 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/revs/testweb/atlassiantest/src/main/resources
+2015-08-26 08:25:18,345 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 08:25:18,346 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/revs/testweb/atlassiantest/src/test/resources
+2015-08-26 08:25:19,098 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 08:25:19,099 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/revs/testweb/maven/src/main/resources
+2015-08-26 08:25:19,100 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 08:25:19,101 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/revs/testweb/maven/src/test/resources
+2015-08-26 08:25:20,152 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 08:25:20,153 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/revs/testweb/maven/src/main/resources
+2015-08-26 08:25:20,154 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 08:25:20,155 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/revs/testweb/maven/src/test/resources
