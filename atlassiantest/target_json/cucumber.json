@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4622232037,
+              "duration": 4431981958,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 4647081072,
+              "duration": 5297096891,
               "status": "passed"
             },
             "line": 5,
@@ -49,7 +49,7 @@
         "before": [
           {
             "result": {
-              "duration": 5225267484,
+              "duration": 7648386041,
               "status": "passed"
             },
             "match": {
@@ -66,7 +66,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1284730935,
+              "duration": 2912181637,
               "status": "passed"
             },
             "line": 10,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 2251425111,
+              "duration": 1704660274,
               "status": "passed"
             },
             "line": 11,
@@ -102,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 1089798909,
+              "duration": 970592479,
               "error_message": "java.lang.IllegalStateException: no user found\r\n\tat com.sample.ConfluencePage.applyRestrictions(ConfluencePage.java:95)\r\n\tat com.sample.StepDefenition.i_associate_the_restriction_of_to_the_user(StepDefenition.java:72)\r\n\tat ✽.And I associate the restriction of \"Can view\" to the user \"saadasd\"(src/test/java/feature/PermissionRestrictions.feature:12)\r\n",
               "status": "failed"
             },
