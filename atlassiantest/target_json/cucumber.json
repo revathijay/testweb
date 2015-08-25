@@ -3,41 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 6116404204,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefenition.setup()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Create a page",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "create-a-page;create-a-page",
-        "after": [
-          {
-            "result": {
-              "duration": 2714552737,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefenition.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 4062533431,
+              "duration": 4622232037,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "I am in the login page",
             "match": {
               "location": "StepDefenition.i_am_in_the_login_page()"
@@ -46,192 +23,113 @@
           },
           {
             "result": {
-              "duration": 169508537,
+              "duration": 4647081072,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I fill in my details as follows",
-            "match": {
-              "location": "StepDefenition.i_fill_in_my_details_as_follows(String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "rekhasndr@gmail.com"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "password",
-                  "Jan@2013"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5029525249,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click \"login\"",
+            "line": 5,
+            "name": "I login with userName as \"rekhasndr@gmail.com\" and password as \"Jan@2013\"",
             "match": {
               "arguments": [
                 {
-                  "val": "login",
-                  "offset": 9
+                  "val": "rekhasndr@gmail.com",
+                  "offset": 26
+                },
+                {
+                  "val": "Jan@2013",
+                  "offset": 64
                 }
               ],
-              "location": "StepDefenition.i_follow_link(String)"
+              "location": "StepDefenition.i_login_with_userName_as_and_password_as(String,String)"
             },
             "keyword": "And "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 1444150795,
+              "duration": 5225267484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefenition.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Permission restrictions on a page",
+        "description": "",
+        "id": "permission-restrictions-on-a-page;permission-restrictions-on-a-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1284730935,
               "status": "passed"
             },
             "line": 10,
-            "name": "I should see \"Dashboard\"",
+            "name": "I navigate to page \"sampletestPage\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Dashboard",
-                  "offset": 14
+                  "val": "sampletestPage",
+                  "offset": 20
                 }
               ],
-              "location": "StepDefenition.i_should_see(String)"
+              "location": "StepDefenition.i_navigate_to_page(String)"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 71425811,
+              "duration": 2251425111,
               "status": "passed"
             },
             "line": 11,
-            "name": "I click \"space-menu-link\"",
+            "name": "I should see \"sampletestPage\"",
             "match": {
               "arguments": [
                 {
-                  "val": "space-menu-link",
-                  "offset": 9
-                }
-              ],
-              "location": "StepDefenition.i_follow_link(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1191252577,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I select \"QA home\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "QA home",
-                  "offset": 10
-                }
-              ],
-              "location": "StepDefenition.i_select(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1711315220,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I click \"quick-create-page-button\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "quick-create-page-button",
-                  "offset": 9
-                }
-              ],
-              "location": "StepDefenition.i_follow_link(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 70337584,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I fill in my details as follows",
-            "match": {
-              "location": "StepDefenition.i_fill_in_my_details_as_follows(String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "title",
-                  "TestSamplePage"
-                ],
-                "line": 15
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1694222640,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I press \"Save\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Save",
-                  "offset": 9
-                }
-              ],
-              "location": "StepDefenition.i_press(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1928170291,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I should see \"TestSamplePage\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TestSamplePage",
+                  "val": "sampletestPage",
                   "offset": 14
                 }
               ],
               "location": "StepDefenition.i_should_see(String)"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
+          },
           {
-            "line": 3,
-            "name": "@createPage"
+            "result": {
+              "duration": 1089798909,
+              "error_message": "java.lang.IllegalStateException: no user found\r\n\tat com.sample.ConfluencePage.applyRestrictions(ConfluencePage.java:95)\r\n\tat com.sample.StepDefenition.i_associate_the_restriction_of_to_the_user(StepDefenition.java:72)\r\n\tat ✽.And I associate the restriction of \"Can view\" to the user \"saadasd\"(src/test/java/feature/PermissionRestrictions.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "I associate the restriction of \"Can view\" to the user \"saadasd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Can view",
+                  "offset": 32
+                },
+                {
+                  "val": "saadasd",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefenition.i_associate_the_restriction_of_to_the_user(String,String)"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Create a page",
+    "name": "Permission restrictions on a page",
     "description": "",
-    "id": "create-a-page",
+    "id": "permission-restrictions-on-a-page",
     "keyword": "Feature",
-    "uri": "src/test/java/feature/CreatePage.feature"
+    "uri": "src/test/java/feature/PermissionRestrictions.feature"
   }
 ]

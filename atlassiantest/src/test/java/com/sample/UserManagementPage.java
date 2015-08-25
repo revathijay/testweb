@@ -21,24 +21,34 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.runtime.ScenarioImpl;
 
-public class CreatePage {
+public class UserManagementPage {
 	
-	//go to login page
-	public static void deltePageAfterCreation(WebDriver driver) 
+	
+	public UserManagementPage() 
 	{
-		CommonSteps.followLink(driver,"action-menu-link");
-	    driver.findElement(By.cssSelector(".action-remove span")).click();
-		System.out.println("i am hgere");
-		CommonSteps.followLink(driver,"confirm");
 		
 	}
 	
-	public static void createNewPage(WebDriver driver) 
+	
+	
+	public UserManagementPage createUser(WebDriver driver, String userName, String email) 
 	{
-		CommonSteps.followLink(driver,"quick-create-page-button");
-		driver.findElement(By.name(title).sendKeys("testpermissions");
-		CommonSteps.clickOn(driver,"Save");
+		driver.findElement(By.name("names")).sendKeys(userName);
+		driver.findElement(By.name("emails")).sendKeys(email);
+		driver.findElement(By.id("new-user-quick-add-submit")).click();
+		return this;
 	}
+	
+	
+	public ConfluencePage navigatetoDashboard(WebDriver driver) 
+	{
+		driver.findElement(By.cssSelector(".aui-dropdown2-trigger.app-switcher-trigger")).click();	
+		driver.findElement(By.linkText("Confluence")).click();	
+		return new ConfluencePage();
+	}
+	
+	
+	
 
 
 	

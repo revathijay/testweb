@@ -1,13 +1,12 @@
 Feature: Permission restrictions on a page
 
-@testpermissions
+Background:
+Given I am in the login page
+And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013"
+
+
 Scenario: Permission restrictions on a page
 
-Given I am in the login page
-And I fill in my details as follows
-| username    |     rekhasndr@gmail.com   | 
-| password    |     Jan@2013              | 
-And I click "login"
-Then I should see "Dashboard"
-And I create a page with title "sample test page for permissions"
-Then I should see "sample test page for permissions"
+When I navigate to page "sampletestPage"
+Then I should see "sampletestPage"
+And I associate the restriction of "Can view" to the user "saadasd"

@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="26.203399">
-<testcase classname="Create a page" name="Create a page" time="26.203399">
-<system-out><![CDATA[Given I am in the login page................................................passed
-And I fill in my details as follows.........................................passed
-And I click "login".........................................................passed
-Then I should see "Dashboard"...............................................passed
-And I click "space-menu-link"...............................................passed
-And I select "QA home"......................................................passed
-And I click "quick-create-page-button"......................................passed
-And I fill in my details as follows.........................................passed
-And I press "Save"..........................................................passed
-Then I should see "TestSamplePage"..........................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.120536">
+<testcase classname="Permission restrictions on a page" name="Permission restrictions on a page" time="19.120536">
+<failure message="java.lang.IllegalStateException: no user found&#13;&#10;&#9;at com.sample.ConfluencePage.applyRestrictions(ConfluencePage.java:95)&#13;&#10;&#9;at com.sample.StepDefenition.i_associate_the_restriction_of_to_the_user(StepDefenition.java:72)&#13;&#10;&#9;at ✽.And I associate the restriction of &quot;Can view&quot; to the user &quot;saadasd&quot;(src/test/java/feature/PermissionRestrictions.feature:12)&#13;&#10;"><![CDATA[Given I am in the login page................................................passed
+And I login with userName as "rekhasndr@gmail.com" and password as "Jan@2013".passed
+When I navigate to page "sampletestPage"....................................passed
+Then I should see "sampletestPage"..........................................passed
+And I associate the restriction of "Can view" to the user "saadasd".........failed
+
+StackTrace:
+java.lang.IllegalStateException: no user found
+	at com.sample.ConfluencePage.applyRestrictions(ConfluencePage.java:95)
+	at com.sample.StepDefenition.i_associate_the_restriction_of_to_the_user(StepDefenition.java:72)
+	at ✽.And I associate the restriction of "Can view" to the user "saadasd"(src/test/java/feature/PermissionRestrictions.feature:12)
+]]></failure>
 </testcase>
 </testsuite>

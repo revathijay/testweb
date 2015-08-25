@@ -23,12 +23,26 @@ import cucumber.runtime.ScenarioImpl;
 
 public class LoginPage {
 	
-	//go to login page
-	public static void visitPage(WebDriver driver) 
+
+	public LoginPage(WebDriver driver, String url) 
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
-		driver.get("https://sampletestpage.atlassian.net/");
+		driver.get(url);
+	}
+	
+	public LoginPage() 
+	{
+		
 	}
 
+
+	
+	public ConfluencePage loginWIthUserNameandPassword(WebDriver driver, String userName, String password) 
+	{
+		driver.findElement(By.name("username")).sendKeys(userName);
+		driver.findElement(By.name("password")).sendKeys(password);
+		driver.findElement(By.id("login")).click();
+		return new ConfluencePage();
+	}
 	
 }
